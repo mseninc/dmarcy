@@ -1,0 +1,16 @@
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "cSpell.words": [
+    "adkim",
+    "aspf",
+    "DMARC",
+    "helo",
+    "mfrom",
+    "pako",
+    "permerror",
+    "softfail",
+    "temperror",
+    "zlibjs"
+  ]
+}
