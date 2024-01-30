@@ -1,12 +1,53 @@
-import { FileUpload } from "@/components/parts/FileUpload";
-import Image from "next/image";
+"use client";
+import { Box } from "@mui/material";
+import { ReportViewer } from "@/components/parts/ReportViewer";
+import { HeaderBar } from "@/components/parts/HeaderBar";
+import { ThemeProvider, createTheme } from "@mui/material";
+import { blue, teal } from "@mui/material/colors";
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: blue[800],
+    },
+    secondary: {
+      main: teal[600],
+    },
+  },
+  shape: {
+    borderRadius: 6,
+  },
+  typography: {
+    fontFamily: [
+      "-apple-system",
+      "BlinkMacSystemFont",
+      '"Segoe UI"',
+      "Roboto",
+      '"Helvetica Neue"',
+      "Arial",
+      "sans-serif",
+      '"Apple Color Emoji"',
+      '"Segoe UI Emoji"',
+      '"Segoe UI Symbol"',
+    ].join(","),
+  },
+});
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div>
-        <FileUpload />
-      </div>
-    </main>
+    <ThemeProvider theme={theme}>
+      <Box
+        component="main"
+        sx={{
+          display: "grid",
+          gridTemplateRows: "auto 1fr",
+          height: "100%",
+          overflow: "hidden",
+        }}
+      >
+        <HeaderBar />
+        <ReportViewer />
+      </Box>
+    </ThemeProvider>
   );
 }

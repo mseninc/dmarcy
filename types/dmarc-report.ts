@@ -1,5 +1,11 @@
 // Type definitions for DMARC report
 
+interface DMARCReport {
+  reportFile: string;
+  xml: string;
+  feedback: FeedbackType;
+}
+
 type AlignmentType = "r" | "s";
 type DispositionType = "none" | "quarantine" | "reject";
 type DMARCResultType = "pass" | "fail";
@@ -57,7 +63,7 @@ interface PolicyPublishedType {
   p: DispositionType;
   sp: DispositionType;
   pct: number;
-  fo: string | string[];
+  fo?: string | string[];
 }
 
 interface PolicyOverrideReason {
