@@ -3,12 +3,12 @@ import { Box } from "@mui/material";
 import { ReportViewer } from "@/components/parts/ReportViewer";
 import { HeaderBar } from "@/components/parts/HeaderBar";
 import { ThemeProvider, createTheme } from "@mui/material";
-import { blue, teal } from "@mui/material/colors";
+import { teal } from "@mui/material/colors";
 
 const theme = createTheme({
   palette: {
     primary: {
-      main: blue[800],
+      main: "#105a9c",
     },
     secondary: {
       main: teal[600],
