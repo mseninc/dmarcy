@@ -36,7 +36,11 @@ export function InformationDialogButton() {
 
   return (
     <>
-      <IconButton onClick={() => setOpen(true)} color="inherit">
+      <IconButton
+        onClick={() => setOpen(true)}
+        color="inherit"
+        title='Open "About DMARCy"'
+      >
         <InfoIcon />
       </IconButton>
       <Dialog onClose={handleClose} open={open}>

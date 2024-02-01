@@ -43,6 +43,7 @@ export function OpenFileButton(props: OpenFileButtonProps) {
       aria-label="Open files"
       color="secondary"
       variant="extended"
+      role="button"
     >
       <FileOpenIcon sx={{ mr: 1 }} />
       Open files
