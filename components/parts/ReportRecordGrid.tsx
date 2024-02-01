@@ -113,13 +113,19 @@ const columns: GridColDef<RecordType, any, any>[] = [
     width: 80,
   },
   {
+    field: "auth_result/spf/domain",
+    valueGetter: (params) => toArray(params.row.auth_results.spf)[0]?.domain,
+    headerName: "SPF Domain",
+    width: 150,
+  },
+  {
     field: "record",
-    valueGetter: (params) => params.row,
+    valueGetter: (params) => JSON.stringify(params.row, null, 2),
     renderCell: (params) => {
-      return <Article titleAccess={JSON.stringify(params.row, null, 2)} />;
+      return <Article color="secondary" titleAccess={params.value} />;
     },
     headerName: "Record",
-    width: 80,
+    width: 70,
   },
 ];
 
