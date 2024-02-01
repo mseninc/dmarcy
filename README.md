@@ -2,7 +2,7 @@
 
 This is a simple DMARC report viewer.
 
-https://dmarcy.msen.dev/
+https://dmarcy.msen.jp/
 
 ## Getting Started
 
