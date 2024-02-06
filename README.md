@@ -25,4 +25,4 @@ We are not responsible for any damages or losses caused by the use of this app. 
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+This project is licensed under the Apache 2.0 License - see the [LICENSE](LICENSE) file for details
